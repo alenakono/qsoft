@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Roboto Regular"), local("Roboto-Regular"), url("../src/fonts/Roboto-Regular.eot") format("embedded-open"), url("../src/fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../src/fonts/Roboto-Medium.eot") format("embedded-open"), url("../src/fonts/Roboto-Medium.ttf") format("truetype");
+}
+.partner {
+  transition: all 0.6s ease-in-out;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Roboto", Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: #121920;
+}
+@media (max-width: 1168px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1168px;
+}
+@media (max-width: 1168px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+header {
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 16px 0 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__logo, .header__profile {
+    margin: 0 0 16px 0;
+    flex-shrink: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__logo {
+    margin-right: 40px;
+  }
+}
+
+.profile-user {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .profile-user {
+    display: block;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 19px;
+  border-left: 1px solid #E5E5E5;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .user {
+    display: none;
+  }
+}
+
+.user__text {
+  margin-right: 10px;
+}
+
+.user__photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+.user__photo img {
+  max-width: 100%;
+}
+
+.search form {
+  position: relative;
+}
+
+.search input {
+  min-width: 763px;
+  padding: 12px 14px 12px 39px;
+  height: 40px;
+  border: 1px solid #EBEBF1;
+  border-radius: 5px;
+  outline: none;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .search input {
+    width: 100%;
+    min-width: 330px;
+    border: none;
+    border-top: 1px solid #EBEBF1;
+  }
+}
+
+.search button {
+  position: absolute;
+  margin: 12px 9px 12px 14px;
+  top: 0;
+  left: 0px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+  background-image: url(../src/image/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: #fff;
+}
+
+.partners-block {
+  padding: 70px 0;
+}
+
+.partners__title {
+  margin-bottom: 30px;
+  max-width: 1170px;
+}
+
+.partners-layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+.partners-layout > * {
+  flex-basis: 270px;
+}
+@media (max-width: 1168px) {
+  .partners-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .partners-layout > * {
+    flex-basis: 30%;
+  }
+}
+@media (max-width: 414px) {
+  .partners-layout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .partners-layout > * {
+    flex-basis: 100%;
+  }
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #EBEBF1;
+  cursor: pointer;
+}
+@media (max-width: 1168px) {
+  .partner {
+    padding: 17px;
+  }
+}
+
+.partners-layout__column {
+  margin: 0 30px 30px 0;
+  height: 120px;
+}
+@media (max-width: 1168px) {
+  .partners-layout__column {
+    margin: 0 0 20px 0;
+  }
+}
+
+.partners-layout__column:nth-of-type(4) {
+  margin-right: -30px;
+}
+@media (max-width: 1168px) {
+  .partners-layout__column:nth-of-type(4) {
+    margin-right: 0px;
+  }
+}
+
+.partner:hover,
+.partner:active {
+  background-color: #FFFFFF;
+  box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+}
+
+.partner img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
